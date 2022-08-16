@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="contenedor">
+        <div class="titulo">
+            <img src="/img/proyect.png" alt="" width="200">
+        </div>
+
+        <div class="bordeExterior" id="containerG">
+            <div class="juego">
+                <div id="contador">
+                    0
+                </div>
+
+                <div class="op" id="opt1" onclick="mostrarRespuesta('opt1')"
+                    style="border-top: none; border-right: solid black 2.5px; border-bottom: solid black 2.5px; border-left: none;">
+                   1
+                </div>
+                <div class="op" id="opt5" onclick="mostrarRespuesta('opt5')"
+                    style="border-top: none; border-right: none; border-bottom: solid black 2.5px; border-left: solid black 2.5px;">
+                    5</div>
+                <div class="op" id="opt2" onclick="mostrarRespuesta('opt2')"
+                    style="border-top: solid black 2.5px; border-right: solid black 2.5px; border-bottom: solid black 2.5px; border-left: none;">
+                    2</div>
+                <div class="op" id="opt6" onclick="mostrarRespuesta('opt6')"
+                    style="border-top: solid black 2.5px; border-right: none; border-bottom: solid black 2.5px; border-left: solid black 2.5px;">
+                    6</div>
+                <div class="op" id="opt3" onclick="mostrarRespuesta('opt3')"
+                    style="border-top: solid black 2.5px; border-right: solid black 2.5px; border-bottom: solid black 2.5px; border-left: none;">
+                    3 
+                </div>
+                <div class="op" id="opt7" onclick="mostrarRespuesta('opt7')"
+                    style="border-top: solid black 2.5px; border-right: none; border-bottom: solid black 2.5px; border-left: solid black 2.5px;">
+                    7</div>
+                <div class="op" id="opt4" onclick="mostrarRespuesta('opt4')"
+                    style="border-top: solid black 2.5px; border-right: solid black 2.5px; border-bottom: none; border-left: none;">
+                    4</div>
+                <div class="op" id="opt8" onclick="mostrarRespuesta('opt8')"
+                    style="border-top: solid black 2.5px; border-right: none; border-bottom: none; border-left: solid black 2.5px;">
+                    8</div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <div id="actualPregunta">
+        1
+    </div>
+    <div id="siguientePregunta" onclick="cargarPregunta()">
+        <span class="material-symbols-outlined" style="font-size: 50px;">
+            arrow_forward_ios
+            </span>
+    </div>
+    <div id="cross">
+
+        <span class="material-symbols-outlined" style="font-size: 350px; ">
+            close
+            </span>
+    </div>
+
+</body>
+
+</html>

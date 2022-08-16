@@ -39,17 +39,18 @@ body {
     transition: all 0.5s ease 0s;
 }
 
+
 .grande{
     transform: scale(1.2);
  
     outline: solid rgb(63, 167, 110) 10px;
-    outline: solid rgb(55, 190, 21) 10px;
+    border: solid rgb(55, 190, 21) 10px;
 }
 .grandeMal{
     transform: scale(1.2);
  
     outline: solid rgb(167, 70, 63) 10px;
-    outline: solid rgb(170, 56, 48) 10px;
+    border: solid rgb(170, 56, 48) 10px;
 }
 
 .op {
@@ -74,10 +75,16 @@ body {
 .op:hover {
 
     filter: brightness(130%);
+    font-size: 45px;
 
 
 
 }
+.correcto:hover{
+    font-size: 30px;
+
+}
+
 
 .titulo {
     display: grid;
@@ -132,7 +139,20 @@ body {
     border-radius: 10px 10px 10px 10px;
     display: grid;
     place-items: center;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
     
+}
+
+.nextNum{
+    transform: scale(1.3);
+    filter: brightness(150%);
+    box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
+    -webkit-box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
+    -moz-box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
+
 }
 .correcto{
     background: rgb(7,199,169);
@@ -173,9 +193,10 @@ place-items: center left;
     z-index: 2;
     border-radius: 10px 10px 10px 10px;
     border: 10px rgb(153, 32, 32) solid;
-    outline: 10px rgb(206, 35, 35) solid;
+    outline: 10px rgb(253, 0, 0) solid;
     background: rgba(0, 0, 0, 0.342);
     top:-600px;
+    
     -webkit-transition: all 1s ease 0s;
     -moz-transition: all 1s ease 0s;
     -o-transition: all 1s ease 0s;
@@ -184,5 +205,8 @@ place-items: center left;
 
 }
 .mostrarCross{
-    transform: translateY(800px);
+    transform: translateY(800px) scale(1.8);
+    filter: brightness(180%);
+    filter: drop-shadow(30px 10px 4px #141416);
+    
 }

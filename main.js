@@ -61,7 +61,16 @@ async function animacionContenedor(option){
     document.getElementById("containerG").classList.remove(option);
 }
 
+async function animacionNumero(){
+    document.getElementById("actualPregunta").classList.add("nextNum");
+    await sleep(800)
+    document.getElementById("actualPregunta").classList.remove("nextNum");
+}
+
 function cargarPregunta() {
+    var audio = new Audio('next-sound.mp3');
+    audio.play();
+    animacionNumero()
     contador.innerText = "0"
     let contenedorPreguntaNumero = document.getElementById("actualPregunta");
     contenedorPreguntaNumero.innerText = parseInt(contenedorPreguntaNumero.innerText) + 1;

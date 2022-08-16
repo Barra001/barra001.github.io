@@ -36,6 +36,8 @@ function mostrarRespuesta(opt) {
         contador.innerText = parseInt(contador.innerText) + preguntas[preguntaActual][opt][1]
         if(contador.innerText=="100"){
             animacionContenedor("grande")
+            var audioWinner = new Audio('winersSound.mp3');
+            audioWinner.play();
         }
         
         opcionActual.classList.add("correcto")
@@ -47,6 +49,8 @@ function mostrarRespuesta(opt) {
     }else{
         if(contador.innerText=="100"){
             animacionContenedor("grandeMal")
+            var audio = new Audio('error.mp3');
+            audio.play();
         }
     }
 }

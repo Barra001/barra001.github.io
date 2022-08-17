@@ -56,14 +56,17 @@ function mostrarRespuesta(opt) {
 }
 
 async function animacionContenedor(option){
+  
     document.getElementById("containerG").classList.add(option);
-    await sleep(500)
+    
+    await sleep(650)
+   
     document.getElementById("containerG").classList.remove(option);
 }
 
 async function animacionNumero(){
     document.getElementById("actualPregunta").classList.add("nextNum");
-    await sleep(800)
+    await sleep(750)
     document.getElementById("actualPregunta").classList.remove("nextNum");
 }
 

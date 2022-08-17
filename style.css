@@ -12,6 +12,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    overflow-y: hidden;
     font-family: 'Prompt', sans-serif;
 }
 
@@ -185,6 +186,8 @@ place-items: center left;
 }
 #siguientePregunta:hover{
     background: rgba(255, 255, 255, 0.144);
+    transform: scale(1.2);
+
 
 }
 #cross{

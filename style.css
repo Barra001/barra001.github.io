@@ -34,9 +34,6 @@ body {
     border: solid white 1.5px;
     outline: solid rgb(0, 0, 0) 10px;
     border-radius: 10px 10px 10px 10px;
-    webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
 
@@ -66,12 +63,8 @@ body {
     background: linear-gradient(309deg, rgba(15, 45, 107, 1) 5%, rgba(15, 45, 107, 1) 6%, rgb(45, 83, 155) 41%);
     filter: brightness(105%);
     z-index: 0;
-    transition: all 0.5;
-    cursor: pointer;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
+    cursor: pointer;
 }
 
 .op:hover {
@@ -120,11 +113,10 @@ body {
     height: 80px;
     width: 130px;
     font-weight: 700;
-    background: rgb(40, 73, 139);
+
     background: linear-gradient(287deg, rgb(40, 75, 146) 0%, rgb(27, 59, 117) 64%, rgb(50, 77, 167) 89%);
     box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
-    -webkit-box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
-    -moz-box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
+
 
 }
 
@@ -132,6 +124,9 @@ body {
     position: relative;
    
 }
+
+
+/*max-height media querys*/
 @media (max-height: 730px) {
     .juego {
         
@@ -144,13 +139,15 @@ body {
         height: 250px;
     }
   }
+
+  /*max-width media querys*/
   @media (max-width: 1320px) {
     .juego {
         
         width: 800px;
     }
     .op{
-        font-size: 25px;
+        font-size: 28px;
     }
     .op:hover {
         font-size: 28px;
@@ -162,7 +159,7 @@ body {
         width: 700px;
     }
     .op{
-        font-size: 20px;
+        font-size: 24px;
     }
     .op:hover {
         font-size: 24px;
@@ -174,7 +171,7 @@ body {
         width: 600px;
     }
     .op{
-        font-size: 15px;
+        font-size: 18.5px;
     }
     .op:hover {
         font-size: 18.5px;
@@ -190,7 +187,7 @@ body {
         font-size: 15px;
     }
     .correcto{
-        font-size: 13px;
+        font-size:  13.5px;
     }
     .op:hover {
         font-size: 13.5px;
@@ -211,9 +208,7 @@ body {
     border-radius: 10px 10px 10px 10px;
     display: grid;
     place-items: center;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
+ 
     transition: all 0.5s ease 0s;
 
 }
@@ -222,12 +217,11 @@ body {
     transform: scale(1.25) rotate(30deg);
     filter: brightness(250%);
     box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
-    -webkit-box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
-    -moz-box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
+
 }
 
 .correcto {
-    background: rgb(7, 199, 169);
+    
     background: linear-gradient(284deg, rgba(7, 199, 169, 1) 14%, rgba(3, 170, 112, 1) 37%, rgba(4, 158, 153, 1) 91%);
     place-items: center left;
     padding-left: 10px;
@@ -260,9 +254,7 @@ body {
     padding: 30px;
     display: grid;
     place-items: center;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
+ 
     transition: all 0.5s ease 0s;
 
 }
@@ -290,9 +282,7 @@ body {
     background: rgba(0, 0, 0, 0.342);
     top: -600px;
 
-    -webkit-transition: all 1s ease 0s;
-    -moz-transition: all 1s ease 0s;
-    -o-transition: all 1s ease 0s;
+  
     transition: all 1s ease 0s;
 
 
@@ -308,9 +298,7 @@ body {
 #imagen {
 
     filter: drop-shadow(10px 7px 10px #000);
-    -webkit-transition: all 1s ease 0s;
-    -moz-transition: all 1s ease 0s;
-    -o-transition: all 1s ease 0s;
+
     transition: all 1s ease 0s;
 
 }
@@ -370,9 +358,7 @@ input:hover {
     top: 50%;
     left: -40px;
     color: white;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
+
     transition: all 0.5s ease 0s;
 }
 
@@ -391,9 +377,7 @@ input:hover {
     display: grid;
     place-items: center;
     border: white solid 8px;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
+
     transition: all 0.5s ease 0s;
 
 }

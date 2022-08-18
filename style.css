@@ -41,15 +41,16 @@ body {
 }
 
 
-.grande{
+.grande {
     transform: scale(1.2);
- 
+
     outline: solid rgb(63, 167, 110) 10px;
     border: solid rgb(55, 190, 21) 10px;
 }
-.grandeMal{
+
+.grandeMal {
     transform: scale(1.2);
- 
+
     outline: solid rgb(167, 70, 63) 10px;
     border: solid rgb(170, 56, 48) 10px;
 }
@@ -81,7 +82,8 @@ body {
 
 
 }
-.correcto:hover{
+
+.correcto:hover {
     font-size: 30px;
 
 }
@@ -126,10 +128,14 @@ body {
 
 }
 
-#actualPregunta{
+.contenedor {
+    position: relative;
+}
+
+#actualPregunta {
     position: absolute;
-    top: 30px;
-    left: 50px;
+    top: 20px;
+    left: 0;
     font-size: 65px;
     font-weight: 1000;
     color: white;
@@ -144,38 +150,45 @@ body {
     -moz-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
-    
+
 }
 
-.nextNum{
+.nextNum {
     transform: scale(1.25) rotate(30deg);
     filter: brightness(250%);
     box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
     -webkit-box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
     -moz-box-shadow: 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
 }
-.correcto{
-    background: rgb(7,199,169);
-background: linear-gradient(284deg, rgba(7,199,169,1) 14%, rgba(3,170,112,1) 37%, rgba(4,158,153,1) 91%);
-place-items: center left;
+
+.correcto {
+    background: rgb(7, 199, 169);
+    background: linear-gradient(284deg, rgba(7, 199, 169, 1) 14%, rgba(3, 170, 112, 1) 37%, rgba(4, 158, 153, 1) 91%);
+    place-items: center left;
     padding-left: 10px;
 
 
 }
-.number{
 
-    position: absolute; 
-    right: 0; 
+.number {
+
+    position: absolute;
+    right: 0;
     height: 101%;
-    border-left: solid black 6px; 
+    border-left: solid black 6px;
     display: grid;
-    place-items: center; width: 100px;
+    place-items: center;
+    width: 100px;
 }
 
-#siguientePregunta{
+
+
+
+
+
+.arrows {
     position: absolute;
     cursor: pointer;
-    right: 0;
     color: white;
     bottom: 0;
     top: 0;
@@ -188,13 +201,20 @@ place-items: center left;
     transition: all 0.5s ease 0s;
 
 }
-#siguientePregunta:hover{
+.arrows:hover {
     background: rgba(255, 255, 255, 0.144);
     transform: scale(1.2);
-
-
 }
-#cross{
+
+#siguientePregunta {
+    right: 0;
+}
+
+#anteriorPregunta {
+    left: 0;
+}
+
+#cross {
     position: absolute;
     color: rgb(218, 25, 25);
     z-index: 2;
@@ -202,27 +222,81 @@ place-items: center left;
     border: 10px rgb(153, 32, 32) solid;
     outline: 10px rgb(253, 0, 0) solid;
     background: rgba(0, 0, 0, 0.342);
-    top:-600px;
-    
+    top: -600px;
+
     -webkit-transition: all 1s ease 0s;
     -moz-transition: all 1s ease 0s;
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
-    
+
 
 }
-.mostrarCross{
+
+.mostrarCross {
     transform: translateY(800px) scale(1.8);
     filter: brightness(180%);
     filter: drop-shadow(30px 10px 4px #141416);
-    
+
 }
-#imagen{
+
+#imagen {
 
     filter: drop-shadow(10px 7px 10px #000);
     -webkit-transition: all 1s ease 0s;
     -moz-transition: all 1s ease 0s;
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
+
+}
+
+.disabled:hover {
+    filter: brightness(70%);
+    cursor: auto;
+
+}
+
+.disabled {
+    filter: brightness(70%);
+    cursor: auto;
+
+}
+.spaceText{
+    color: rgb(185, 185, 185);
+    filter: blur(0.6px);
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    right: 0;
+    left: 0;
+    font-size: 22px;
+    font-weight: 1000;
     
+    
+
+}
+.playArrow{
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    background: rgba(0, 0, 0, 0.363);
+    width: 80px;
+    height: 110px;
+    border-radius: 10px 10px 10px 10px;
+    display: grid;
+    place-items: center;
+    border: white solid 8px;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    
+}
+.playArrow:hover{
+    transform: scale(1.1);
+    color: rgb(146, 146, 146);
+
+
+    cursor: pointer;
+
 }

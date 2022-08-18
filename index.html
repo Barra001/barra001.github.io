@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-
+    <link rel="icon" type="image/png" src="/img/proyect.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script defer src="/main.js"></script>
@@ -20,6 +20,15 @@
 
 <body>
     <section class="contenedor">
+        <div id="actualPregunta">
+            1
+        </div>
+
+        <div class="playArrow" onclick="togglePlay()">
+            <span class="material-symbols-outlined" style="font-size: 80px;" id="playText">
+                play_arrow
+                </span>
+        </div>
         <div class="titulo">
             <img src="/img/proyect.png" alt="" width="200"  id="imagen">
         </div>
@@ -60,14 +69,19 @@
             </div>
 
         </div>
-
+        <div class="spaceText"><p>Tocá <kbd>space</kbd> cuando la respuesta sea errónea</p> </div>
+        
     </section>
-    <div id="actualPregunta">
-        1
-    </div>
-    <div id="siguientePregunta" onclick="cargarPregunta()">
+    
+    <div id="siguientePregunta" class="arrows" onclick="cargarPregunta(1)">
         <span class="material-symbols-outlined" style="font-size: 50px;">
             arrow_forward_ios
+            </span>
+    </div>
+
+    <div id="anteriorPregunta" class="arrows" onclick="cargarPregunta(-1)">
+        <span class="material-symbols-outlined" style="font-size: 50px;">
+            arrow_back_ios
             </span>
     </div>
     <div id="cross">

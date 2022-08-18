@@ -75,7 +75,7 @@ async function animacionNumero() {
 function cargarPregunta(sum) {
     let contenedorPreguntaNumero = document.getElementById("actualPregunta");
     let siguientePag = parseInt(contenedorPreguntaNumero.innerText) + sum;
-    if( siguientePag == 0 || siguientePag == preguntas.length +1){
+    if (siguientePag == 0 || siguientePag == preguntas.length + 1) {
         var audio = new Audio('error.mp3');
         audio.play();
         return
@@ -84,7 +84,7 @@ function cargarPregunta(sum) {
     audio.play();
     animacionNumero()
     contador.innerText = "0"
-    
+
     contenedorPreguntaNumero.innerText = siguientePag;
     let cont = 1;
     while (cont != 9) {
@@ -104,11 +104,11 @@ function cargarPregunta(sum) {
 }
 
 function selectAvaliableQuestions() {
-    
+
     let preguntaActual = parseInt(document.getElementById("actualPregunta").innerText) - 1;
     let cont = 1;
     while (cont != 9) {
-        if (preguntas[preguntaActual]["opt"+cont] == "-") {
+        if (preguntas[preguntaActual]["opt" + cont] == "-") {
             let opcionActual = document.getElementById("opt" + cont);
             opcionActual.innerHTML = "";
             opcionActual.classList.add("disabled")
@@ -118,22 +118,24 @@ function selectAvaliableQuestions() {
 }
 var audioMusic = new Audio('suspenso.mp3');
 audioMusic.loop = true
-audioMusic.volume = 0.23
-function togglePlay(){
+audioMusic.volume = 0.5
+document.getElementById("volume-control").addEventListener("change", function (e) {
+    
+    audioMusic.volume = (e.currentTarget.value) / 100;
+})
+function togglePlay() {
     let textElement = document.getElementById("playText")
-    if(isPlaying){
-        
-        textElement.innerText="play_arrow"
-        isPlaying=false
+    if (isPlaying) {
+
+        textElement.innerText = "play_arrow"
+        isPlaying = false
         audioMusic.pause();
 
-    }else{
-        textElement.innerText="pause"
-        isPlaying=true
-        
-        audioMusic.loop = true
+    } else {
+        textElement.innerText = "pause"
+        isPlaying = true
         audioMusic.play();
 
     }
-    
+
 }

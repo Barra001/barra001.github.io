@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" type="image/png" src="/img/proyect.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script defer src="/main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>100 Misioneros</title>
 </head>
@@ -23,14 +24,26 @@
         <div id="actualPregunta">
             1
         </div>
-
-        <div class="playArrow" onclick="togglePlay()">
-            <span class="material-symbols-outlined" style="font-size: 80px;" id="playText">
-                play_arrow
+        <div class="left">
+            <div class="playArrow" onclick="togglePlay()">
+                <span class="material-symbols-outlined" style="font-size: 80px;" id="playText">
+                    play_arrow
                 </span>
+            </div>
+            <div class="volumeControl">
+                <span class="material-symbols-outlined">
+                    volume_up
+                </span>
+                <input type="range" id="volume-control" orient="vertical">
+                <span class="material-symbols-outlined">
+                    volume_mute
+                </span>
+            </div>
+
         </div>
+
         <div class="titulo">
-            <img src="/img/proyect.png" alt="" width="200"  id="imagen">
+            <img src="/img/proyect.png" alt="" width="200" id="imagen">
         </div>
 
         <div class="bordeExterior" id="containerG" style=" filter: drop-shadow(10px 7px 10px #000);">
@@ -41,7 +54,7 @@
 
                 <div class="op" id="opt1" onclick="mostrarRespuesta('opt1')"
                     style="border-top: none; border-right: solid black 2.5px; border-bottom: solid black 2.5px; border-left: none;">
-                   1
+                    1
                 </div>
                 <div class="op" id="opt5" onclick="mostrarRespuesta('opt5')"
                     style="border-top: none; border-right: none; border-bottom: solid black 2.5px; border-left: solid black 2.5px;">
@@ -54,7 +67,7 @@
                     6</div>
                 <div class="op" id="opt3" onclick="mostrarRespuesta('opt3')"
                     style="border-top: solid black 2.5px; border-right: solid black 2.5px; border-bottom: solid black 2.5px; border-left: none;">
-                    3 
+                    3
                 </div>
                 <div class="op" id="opt7" onclick="mostrarRespuesta('opt7')"
                     style="border-top: solid black 2.5px; border-right: none; border-bottom: solid black 2.5px; border-left: solid black 2.5px;">
@@ -69,26 +82,28 @@
             </div>
 
         </div>
-        <div class="spaceText"><p>Tocá <kbd>space</kbd> cuando la respuesta sea errónea</p> </div>
-        
+        <div class="spaceText">
+            <p>Tocá <kbd>space</kbd> cuando la respuesta sea errónea</p>
+        </div>
+
     </section>
-    
+
     <div id="siguientePregunta" class="arrows" onclick="cargarPregunta(1)">
         <span class="material-symbols-outlined" style="font-size: 50px;">
             arrow_forward_ios
-            </span>
+        </span>
     </div>
 
     <div id="anteriorPregunta" class="arrows" onclick="cargarPregunta(-1)">
         <span class="material-symbols-outlined" style="font-size: 50px;">
             arrow_back_ios
-            </span>
+        </span>
     </div>
     <div id="cross">
 
         <span class="material-symbols-outlined" style="font-size: 200px; ">
             close
-            </span>
+        </span>
     </div>
 
 </body>

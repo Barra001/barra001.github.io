@@ -152,6 +152,9 @@ body {
     .op{
         font-size: 25px;
     }
+    .op:hover {
+        font-size: 28px;
+    }
   }
   @media (max-width: 1085px) {
     .juego {
@@ -160,6 +163,9 @@ body {
     }
     .op{
         font-size: 20px;
+    }
+    .op:hover {
+        font-size: 24px;
     }
   }
   @media (max-width: 987px) {
@@ -170,6 +176,9 @@ body {
     .op{
         font-size: 15px;
     }
+    .op:hover {
+        font-size: 18.5px;
+    }
   }
   @media (max-width: 893px) {
     .juego {
@@ -178,7 +187,13 @@ body {
         
     }
     .op{
-        font-size: 10px;
+        font-size: 15px;
+    }
+    .correcto{
+        font-size: 13px;
+    }
+    .op:hover {
+        font-size: 13.5px;
     }
   }
 

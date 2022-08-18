@@ -130,7 +130,57 @@ body {
 
 .contenedor {
     position: relative;
+   
 }
+@media (max-height: 730px) {
+    .juego {
+        
+        height: 300px;
+    }
+  }
+  @media (max-height: 630px) {
+    .juego {
+        
+        height: 250px;
+    }
+  }
+  @media (max-width: 1320px) {
+    .juego {
+        
+        width: 800px;
+    }
+    .op{
+        font-size: 25px;
+    }
+  }
+  @media (max-width: 1085px) {
+    .juego {
+        
+        width: 700px;
+    }
+    .op{
+        font-size: 20px;
+    }
+  }
+  @media (max-width: 987px) {
+    .juego {
+        
+        width: 600px;
+    }
+    .op{
+        font-size: 15px;
+    }
+  }
+  @media (max-width: 893px) {
+    .juego {
+        
+        width: 500px;
+        
+    }
+    .op{
+        font-size: 10px;
+    }
+  }
 
 #actualPregunta {
     position: absolute;

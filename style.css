@@ -254,7 +254,7 @@ body {
     color: white;
     bottom: 0;
     top: 0;
-    padding: 30px;
+    padding: 10px;
     display: grid;
     place-items: center;
  
@@ -269,10 +269,12 @@ body {
 
 #siguientePregunta {
     right: 0;
+    
 }
 
 #anteriorPregunta {
     left: 0;
+    padding-left: 18px;
 }
 
 #cross {

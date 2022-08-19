@@ -18,8 +18,8 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 var preguntas = [
-    { pregunta: "¿Cual es la mejor cancion de misa?", opt1: ["Vida en abundancia", 51], opt2: ["Eres", 18], opt3: ["Vale la pena", 12], opt4: ["Nada te turbe", 8], opt5: ["Tú estás aquí", 6], opt6: ["Todo en esta vida", 5], opt7: "-", opt8: "-" },
-    { pregunta: "¿Quien es el mejor?", opt1: ["Juan", 50], opt2: ["Pepe", 20], opt3: ["Carlos", 10], opt4: ["Jaime", 9], opt5: ["Pedro", 11], opt6: "-", opt7: "-", opt8: "-" },
+    { pregunta: "¿Cual es la mejor cancion de misa?", opt1: ["Vida en abundancia", 50], opt2: ["Eres", 18], opt3: ["Vale la pena", 12], opt4: ["Nada te turbe", 8], opt5: ["Tú estás aquí", 6], opt6: ["Todo en esta vida", 5], opt7: "-", opt8: "-" },
+    { pregunta: "¿Quien es el mejor?", opt1: ["Juan", 25], opt2: ["Pepe", 20], opt3: ["Carlos", 10], opt4: ["Jaime", 9], opt5: ["Pedro", 11], opt6: "-", opt7: "-", opt8: "-" },
     { pregunta: "¿Quien es golador?", opt1: ["Messi", 60], opt2: ["Ronaldo", 25], opt3: ["Puyol", 11], opt4: ["Neymar", 2], opt5: ["David Luis", 1], opt6: ["JuancarLos", 1], opt7: "-", opt8: "-" },
     { pregunta: "¿Que colores hay?", opt1: ["Rojo", 80], opt2: ["Verde", 5], opt3: ["Azul", 5], opt4: ["Amarillo", 5], opt5: ["Naranja", 2], opt6: ["Blanco", 1], opt7: ["Negro", 1], opt8: ["Gris", 1] }
 
@@ -28,15 +28,30 @@ var contador = document.getElementById("contador")
 
 selectAvaliableQuestions()
 
+function conseguirSuma(pregunta) {
+    let suma = 0
+    for (let i = 1; i <= 8; i++) {
+        let element = pregunta["opt" + i]
+        if (element[1]) {
+            suma = suma + element[1]
+        }
+
+    }
+    return suma
+
+}
+
 function mostrarRespuesta(opt) {
 
     let preguntaActual = parseInt(document.getElementById("actualPregunta").innerText) - 1;
     let opcionActual = document.getElementById(opt);
 
     if (preguntas[preguntaActual][opt][0] != "-" && !opcionActual.classList.contains("correcto")) {
-        opcionActual.innerHTML = preguntas[preguntaActual][opt][0] + '<div class="number">' + preguntas[preguntaActual][opt][1] + '</div>'
-        contador.innerText = parseInt(contador.innerText) + preguntas[preguntaActual][opt][1]
-        if (contador.innerText == "100") {
+        opcionActual.innerHTML = '<div class="textOption">'+ preguntas[preguntaActual][opt][0]+'</div>'+ '<div class="number">' + preguntas[preguntaActual][opt][1] + '</div>'
+
+        let sumaAContador = parseInt(contador.innerText) + preguntas[preguntaActual][opt][1]
+        contador.innerText = sumaAContador
+        if (sumaAContador == conseguirSuma(preguntas[preguntaActual])) {
             animacionContenedor("grande")
             var audioWinner = new Audio('winersSound.mp3');
             audioWinner.play();
@@ -89,7 +104,7 @@ function cargarPregunta(sum) {
     let cont = 1;
     while (cont != 9) {
         let opcionActual = document.getElementById("opt" + cont);
-        opcionActual.innerHTML = cont
+        opcionActual.innerHTML =  '<div class="optionNumber">' + cont + '</div>'
         if (opcionActual.classList.contains("correcto")) {
             opcionActual.classList.remove("correcto")
         }
@@ -120,7 +135,7 @@ var audioMusic = new Audio('suspenso.mp3');
 audioMusic.loop = true
 audioMusic.volume = 0.5
 document.getElementById("volume-control").addEventListener("change", function (e) {
-    
+
     audioMusic.volume = (e.currentTarget.value) / 100;
 })
 function togglePlay() {
@@ -130,11 +145,12 @@ function togglePlay() {
         textElement.innerText = "play_arrow"
         isPlaying = false
         audioMusic.pause();
-
+        document.getElementsByClassName("volumeControl")[0].style.display="none"
     } else {
         textElement.innerText = "pause"
         isPlaying = true
         audioMusic.play();
+        document.getElementsByClassName("volumeControl")[0].style.display="grid"
 
     }
 

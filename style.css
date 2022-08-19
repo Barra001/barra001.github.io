@@ -14,6 +14,7 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: 'Prompt', sans-serif;
+    
 }
 
 
@@ -27,6 +28,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    
     position: relative;
 }
 
@@ -57,8 +59,8 @@ body {
 
     font-size: 30px;
     font-weight: 700;
-    display: grid;
-    place-items: center;
+    
+
     background: rgb(15, 45, 107);
     background: linear-gradient(309deg, rgba(15, 45, 107, 1) 5%, rgba(15, 45, 107, 1) 6%, rgb(45, 83, 155) 41%);
     filter: brightness(105%);
@@ -67,19 +69,23 @@ body {
     cursor: pointer;
 }
 
+.optionNumber{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .op:hover {
 
     filter: brightness(130%);
-    font-size: 45px;
 
 
 
-}
-
-.correcto:hover {
-    font-size: 30px;
 
 }
+
+
 
 
 .titulo {
@@ -99,7 +105,7 @@ body {
 }
 
 #contador {
-    z-index: 1;
+    z-index: 100;
     display: grid;
     place-items: center;
     position: absolute;
@@ -132,6 +138,11 @@ body {
         
         height: 300px;
     }
+    #contador{
+        height: 70px;
+    
+        
+    }
   }
   @media (max-height: 630px) {
     .juego {
@@ -146,10 +157,7 @@ body {
         
         width: 800px;
     }
-    .op{
-        font-size: 28px;
-    }
-    .op:hover {
+    .correcto{
         font-size: 28px;
     }
   }
@@ -158,10 +166,7 @@ body {
         
         width: 700px;
     }
-    .op{
-        font-size: 24px;
-    }
-    .op:hover {
+    .correcto{
         font-size: 24px;
     }
   }
@@ -170,11 +175,8 @@ body {
         
         width: 600px;
     }
-    .op{
-        font-size: 18.5px;
-    }
-    .op:hover {
-        font-size: 18.5px;
+    .correcto{
+        font-size: 20px;
     }
   }
   @media (max-width: 893px) {
@@ -183,14 +185,8 @@ body {
         width: 500px;
         
     }
-    .op{
-        font-size: 15px;
-    }
     .correcto{
-        font-size:  13.5px;
-    }
-    .op:hover {
-        font-size: 13.5px;
+        font-size:  18px;
     }
   }
 
@@ -231,15 +227,22 @@ body {
 
 .number {
 
-    position: absolute;
-    right: 0;
+    float: right;
+    width: 25%;
     height: 101%;
     border-left: solid black 6px;
     display: grid;
     place-items: center;
-    width: 100px;
+   
 }
+.textOption{
+    float: left;
+    height: 100%;
+    width: 70%;
+    display: grid;
+    place-items: center left;
 
+}
 
 
 
@@ -294,6 +297,7 @@ body {
     filter: drop-shadow(30px 10px 4px #141416);
 
 }
+
 
 #imagen {
 
@@ -358,7 +362,7 @@ input:hover {
     top: 50%;
     left: -40px;
     color: white;
-
+    
     transition: all 0.5s ease 0s;
 }
 

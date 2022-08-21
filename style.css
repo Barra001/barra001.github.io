@@ -65,7 +65,7 @@ body {
     background: linear-gradient(309deg, rgba(15, 45, 107, 1) 5%, rgba(15, 45, 107, 1) 6%, rgb(45, 83, 155) 41%);
     filter: brightness(105%);
     z-index: 0;
-    transition: all 0.5s ease 0s;
+    
     cursor: pointer;
 }
 
@@ -113,7 +113,7 @@ body {
     color: white;
     border: solid black 5px;
     border-radius: 10px 10px 10px 10px;
-    top: -65px;
+    top: -75px;
     left: 50%;
     transform: translateX(-50%);
     height: 80px;
@@ -221,6 +221,7 @@ body {
     background: linear-gradient(284deg, rgba(7, 199, 169, 1) 14%, rgba(3, 170, 112, 1) 37%, rgba(4, 158, 153, 1) 91%);
     place-items: center left;
     padding-left: 10px;
+  
 
 
 }

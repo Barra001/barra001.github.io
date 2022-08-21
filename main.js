@@ -18,20 +18,20 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 var preguntas = [
-    { pregunta: "", opt1: ["Vida en abundancia", 33], opt2: ["Alma misionera", 25], opt3: ["Frente a tu trono", 8], opt4: ["Eres", 5], opt5: ["Vale la pena", 5], opt6: ["Dime rey", 5], opt7: ["Perfume a tus pies", 5], opt8: "-" },
+    { pregunta: "", opt1: ["Vida en abundancia", 33], opt2: ["Alma misionera", 25], opt3: ["Frente a tu trono", 8], opt4: ["Eres", 7], opt5: ["Vale la pena", 6], opt6: ["Dime rey", 6], opt7: ["Perfume a tus pies", 5], opt8: "-" },
     { pregunta: "", opt1: ["Rosario", 35], opt2: ["Sobre de dormir", 15], opt3: ["Abrigo", 13], opt4: ["Biblia", 10], opt5: ["Mate", 8], opt6: ["Colchón", 5], opt7: ["Cruz", 5], opt8: "-" },
-    { pregunta: "", opt1: ["Misa", 20], opt2: ["El Piso", 18], opt3: ["El Baño", 8], opt4: ["En Adoración", 8], opt5: ["La vigilia", 5], opt6: ["Al lado del que ronca", 5], opt7: ["Bondi", 5], opt8: ["La cena", 5] },
-    { pregunta: "", opt1: ["La comunión", 53], opt2: ["La Homilía", 18], opt3: ["La consagración", 8], opt4: ["Saludo de paz", 5], opt5: ["Cuando cantamos", 5], opt6: ["Acción de gracias", 5], opt7: "-", opt8: "-" },
-    { pregunta: "", opt1: ["Cuando todos duermen", 33], opt2: ["El Almuerzo", 18], opt3: ["Antes de dormir", 15], opt4: ["Rato Libre", 8], opt5: ["Post Misionada", 5], opt6: ["De tarde / Siesta", 5], opt7: "-", opt8: "-" },
-    { pregunta: "", opt1: ["Stella", 58], opt2: ["Catedral", 18], opt3: ["San juan bautista", 8], opt4: ["Sociedad de san juan", 5], opt5: "-", opt6: "-", opt7: "-", opt8: "-" },
-    { pregunta: "", opt1: ["No me interesa / andate", 65], opt2: ["Un insulto", 13], opt3: ["Tengo COVID", 8], opt4: ["Me hice encima", 5], opt5: "-", opt6: "-", opt7: "-", opt8: "-" },
-    { pregunta: "", opt1: ["Pasta", 33], opt2: ["Arroz con cosas", 18], opt3: ["Guiso", 13], opt4: ["Pizza", 8], opt5: ["Polenta", 8], opt6: ["Pan", 5], opt7: ["Panchos", 5], opt8: ["Galletas de campo", 5] },
-    { pregunta: "", opt1: ["Ahora no puedo / estoy ocupado", 33], opt2: ["No me interesa", 33], opt3: ["Estoy cocinando", 13], opt4: ["Tengo un cumple", 13], opt5: ["Tengo un problema personal", 5], opt6: "-", opt7: "-", opt8: "-" },
-    { pregunta: "", opt1: ["5", 23], opt2: ["3", 10], opt3: ["2", 10], opt4: ["10", 10], opt5: ["15", 10], opt6: ["7", 8], opt7: ["4", 5], opt8: ["6", 5] },
-    { pregunta: "", opt1: ["María", 15], opt2: ["Sofía", 8], opt3: ["Agustina", 5], opt4: ["Andrea", 5], opt5: ["Florencia", 5], opt6: "-", opt7: "-", opt8: "-" },
-    { pregunta: "", opt1: ["Juan", 25], opt2: ["Kevin", 20], opt3: ["José", 15], opt4: "-", opt5: "-", opt6: "-", opt7: "-", opt8: "-" },
-    { pregunta: "", opt1: ["Salto", 25], opt2: ["Rivera", 10], opt3: ["Paysandú", 8], opt4: ["Maldonado", 8], opt5: ["Durazno", 8], opt6: ["Canelones", 8], opt7: ["Florida", 5], opt8: ["Lavalleja", 5] },
-    { pregunta: "", opt1: ["La Mater", 23], opt2: ["La cruz", 20], opt3: ["Denario", 18], opt4: ["La Biblia", 13], opt5: ["Una estampita", 10], opt6: ["Cadenita", 5], opt7: "-", opt8: "-" }
+    { pregunta: "", opt1: ["Misa", 21], opt2: ["El Piso", 18], opt3: ["El Baño", 9], opt4: ["En Adoración", 8], opt5: ["La vigilia", 7], opt6: ["Al lado del que ronca", 6], opt7: ["Bondi", 5], opt8: ["La cena", 5] },
+    { pregunta: "", opt1: ["La comunión", 53], opt2: ["La Homilía", 18], opt3: ["La consagración", 9], opt4: ["Saludo de paz", 7], opt5: ["Cuando cantamos", 6], opt6: ["Acción de gracias", 5], opt7: "-", opt8: "-" },
+    { pregunta: "", opt1: ["Cuando todos duermen", 33], opt2: ["El Almuerzo", 19], opt3: ["Antes de dormir", 17], opt4: ["Rato Libre", 9], opt5: ["Post Misionada", 7], opt6: ["De tarde / Siesta", 6], opt7: "-", opt8: "-" },
+    { pregunta: "", opt1: ["Stella", 58], opt2: ["Catedral", 19], opt3: ["San juan bautista", 8], opt4: ["Sociedad de san juan", 7], opt5: "-", opt6: "-", opt7: "-", opt8: "-" },
+    { pregunta: "", opt1: ["No me interesa / andate", 65], opt2: ["Un insulto", 13], opt3: ["Tengo COVID", 8], opt4: ["Me hice encima", 7], opt5: "-", opt6: "-", opt7: "-", opt8: "-" },
+    { pregunta: "", opt1: ["Pasta", 33], opt2: ["Arroz con cosas", 18], opt3: ["Guiso", 13], opt4: ["Pizza", 11], opt5: ["Polenta", 8], opt6: ["Pan", 6], opt7: ["Panchos", 5], opt8: ["Galletas de campo", 3] },
+    { pregunta: "", opt1: ["Ahora no puedo / estoy ocupado", 32], opt2: ["No me interesa", 31], opt3: ["Estoy cocinando", 16], opt4: ["Tengo un cumple", 14], opt5: ["Tengo un problema personal", 4], opt6: "-", opt7: "-", opt8: "-" },
+    { pregunta: "", opt1: ["5", 24], opt2: ["3", 14], opt3: ["2", 11], opt4: ["10", 10], opt5: ["15", 8], opt6: ["7", 6], opt7: ["4", 5], opt8: ["6", 3] },
+    { pregunta: "", opt1: ["María", 18], opt2: ["Sofía", 11], opt3: ["Agustina", 7], opt4: ["Andrea", 6], opt5: ["Florencia", 3], opt6: "-", opt7: "-", opt8: "-" },
+    { pregunta: "", opt1: ["Juan", 28], opt2: ["Kevin", 23], opt3: ["José", 17], opt4: "-", opt5: "-", opt6: "-", opt7: "-", opt8: "-" },
+    { pregunta: "", opt1: ["Salto", 27], opt2: ["Rivera", 13], opt3: ["Paysandú", 11], opt4: ["Maldonado", 10], opt5: ["Durazno", 7], opt6: ["Canelones", 5], opt7: ["Florida", 4], opt8: ["Lavalleja", 2] },
+    { pregunta: "", opt1: ["La Mater", 23], opt2: ["La cruz", 18], opt3: ["Denario", 16], opt4: ["La Biblia", 13], opt5: ["Una estampita", 9], opt6: ["Cadenita", 7], opt7: "-", opt8: "-" }
 
 ];
 var contador = document.getElementById("contador")

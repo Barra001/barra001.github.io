@@ -21,6 +21,48 @@ document.addEventListener("keypress", async function (event) {
         await sleep(2000)
         document.getElementById("cross").classList.remove("mostrarCross");
     }
+    if (event.keyCode == 49) {
+
+        mostrarRespuesta('opt1')
+    }
+    if (event.keyCode == 50) {
+
+        mostrarRespuesta('opt2')
+    }
+    if (event.keyCode == 51) {
+
+        mostrarRespuesta('opt3')
+    }
+    if (event.keyCode == 52) {
+
+        mostrarRespuesta('opt4')
+    }
+    if (event.keyCode == 53) {
+
+        mostrarRespuesta('opt5')
+    }
+    if (event.keyCode == 54) {
+
+        mostrarRespuesta('opt6')
+    }
+    if (event.keyCode == 55) {
+
+        mostrarRespuesta('opt7')
+    }
+    if (event.keyCode == 56) {
+
+        mostrarRespuesta('opt8')
+        
+    }
+    if (event.keyCode == 57) {
+
+        cargarPregunta(1)
+        
+    }
+    if (event.keyCode == 48) {
+
+        cargarPregunta(-1)
+    }
 });
 
 
@@ -31,7 +73,7 @@ var preguntas = [
     { pregunta: "", opt1: ["Vida en abundancia", 33], opt2: ["Alma misionera", 22], opt3: ["Frente a tu trono", 10], opt4: ["Eres", 7], opt5: ["Vale la pena", 6], opt6: ["Dime rey", 6], opt7: ["Perfume a tus pies", 4], opt8: "-" },
     { pregunta: "", opt1: ["Rosario", 36], opt2: ["Sobre de dormir", 14], opt3: ["Abrigo", 14], opt4: ["Biblia", 11], opt5: ["Mate", 9], opt6: ["Colchón", 6], opt7: ["Cruz", 5], opt8: "-" },
     { pregunta: "", opt1: ["Misa", 21], opt2: ["El Piso", 18], opt3: ["El Baño", 6], opt4: ["En Adoración", 6], opt5: ["La vigilia", 4], opt6: ["Al lado del que ronca", 4], opt7: ["Bondi", 3], opt8: "-" },
-    { pregunta: "", opt1: ["La comunión", 53], opt2: ["La homilía", 20], opt3: ["La consagración", 9], opt4: ["Saludo de paz", 6], opt5: ["Cuando cantamos", 5], opt6: ["Acción de gracias", 5], opt7: "-", opt8: "-" },      
+    { pregunta: "", opt1: ["La comunión", 53], opt2: ["La homilía", 20], opt3: ["La consagración", 9], opt4: ["Saludo de paz", 6], opt5: ["Cuando cantamos", 5], opt6: ["Acción de gracias", 5], opt7: "-", opt8: "-" },
     { pregunta: "", opt1: ["Cuando todos duermen", 33], opt2: ["El Almuerzo", 20], opt3: ["Antes de dormir", 17], opt4: ["Rato Libre", 9], opt5: ["Post Misionada", 7], opt6: ["De tarde / Siesta", 4], opt7: "-", opt8: "-" },
     { pregunta: "", opt1: ["Stella", 58], opt2: ["Catedral", 19], opt3: ["San juan bautista", 8], opt4: ["Sociedad de san juan", 5], opt5: "-", opt6: "-", opt7: "-", opt8: "-" },
     { pregunta: "", opt1: ["Pasta", 34], opt2: ["Arroz con cosas", 19], opt3: ["Guiso", 13], opt4: ["Pizza", 9], opt5: ["Polenta", 8], opt6: ["Panchos", 6], opt7: "-", opt8: "-" },
@@ -67,7 +109,7 @@ function mostrarRespuesta(opt) {
     let opcionActual = document.getElementById(opt);
 
     if (preguntas[preguntaActual][opt][0] != "-" && !opcionActual.classList.contains("correcto")) {
-        opcionActual.innerHTML = '<div class="textOption">'+ preguntas[preguntaActual][opt][0]+'</div>'+ '<div class="number">' + preguntas[preguntaActual][opt][1] + '</div>'
+        opcionActual.innerHTML = '<div class="textOption">' + preguntas[preguntaActual][opt][0] + '</div>' + '<div class="number">' + preguntas[preguntaActual][opt][1] + '</div>'
 
         let sumaAContador = parseInt(contador.innerText) + preguntas[preguntaActual][opt][1]
         contador.innerText = sumaAContador
@@ -95,11 +137,11 @@ function mostrarRespuesta(opt) {
 async function animacionContenedor(option) {
 
     document.getElementById("containerG").classList.add(option);
-    if(option=="grande"){
+    if (option == "grande") {
         document.getElementById("imagen").classList.add("animationImagen")
     }
     await sleep(650)
-    if(option=="grande"){
+    if (option == "grande") {
         document.getElementById("imagen").classList.remove("animationImagen")
     }
     document.getElementById("containerG").classList.remove(option);
@@ -119,7 +161,7 @@ function cargarPregunta(sum) {
         bigErrorAudio.play();
         return
     }
-    nextAudio.currentTime=0
+    nextAudio.currentTime = 0
     nextAudio.play();
     animacionNumero()
     contador.innerText = "0"
@@ -128,7 +170,7 @@ function cargarPregunta(sum) {
     let cont = 1;
     while (cont != 9) {
         let opcionActual = document.getElementById("opt" + cont);
-        opcionActual.innerHTML =  '<div class="optionNumber">' + cont + '</div>'
+        opcionActual.innerHTML = '<div class="optionNumber">' + cont + '</div>'
         if (opcionActual.classList.contains("correcto")) {
             opcionActual.classList.remove("correcto")
         }
@@ -169,12 +211,12 @@ function togglePlay() {
         textElement.innerText = "play_arrow"
         isPlaying = false
         audioMusic.pause();
-        document.getElementsByClassName("volumeControl")[0].style.display="none"
+        document.getElementsByClassName("volumeControl")[0].style.display = "none"
     } else {
         textElement.innerText = "pause"
         isPlaying = true
         audioMusic.play();
-        document.getElementsByClassName("volumeControl")[0].style.display="grid"
+        document.getElementsByClassName("volumeControl")[0].style.display = "grid"
 
     }
 

@@ -1,9 +1,9 @@
 var isPlaying = false
-var errorAudio = new Audio('error-sound.mp3');
-var audioWinner = new Audio('winersSound.mp3');
-var successAudio = new Audio('success-sound.mp3');
-var bigErrorAudio = new Audio('error.mp3');
-var nextAudio = new Audio('next-sound.mp3');
+var errorAudio = new Audio('/audio/error-sound.mp3');
+var audioWinner = new Audio('/audio/winersSound.mp3');
+var successAudio = new Audio('/audio/success-sound.mp3');
+var bigErrorAudio = new Audio('/audio/error.mp3');
+var nextAudio = new Audio('/audio/next-sound.mp3');
 nextAudio.load()
 bigErrorAudio.load()
 successAudio.load()
@@ -155,7 +155,7 @@ function selectAvaliableQuestions() {
         cont = cont + 1
     }
 }
-var audioMusic = new Audio('suspenso.mp3');
+var audioMusic = new Audio('/audio/suspenso.mp3');
 audioMusic.loop = true
 audioMusic.volume = 0.5
 document.getElementById("volume-control").addEventListener("change", function (e) {

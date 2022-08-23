@@ -95,9 +95,13 @@ function mostrarRespuesta(opt) {
 async function animacionContenedor(option) {
 
     document.getElementById("containerG").classList.add(option);
-
+    if(option=="grande"){
+        document.getElementById("imagen").classList.add("animationImagen")
+    }
     await sleep(650)
-
+    if(option=="grande"){
+        document.getElementById("imagen").classList.remove("animationImagen")
+    }
     document.getElementById("containerG").classList.remove(option);
 }
 

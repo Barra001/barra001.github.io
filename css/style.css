@@ -37,52 +37,94 @@ body {
     outline: solid rgb(0, 0, 0) 10px;
     border-radius: 10px 10px 10px 10px;
     transition: all 0.5s ease 0s;
+    box-shadow: 0px 0px 70px 20px rgb(0, 174, 255);
 }
 
 
 .grande {
     transform: scale(1.2);
 
-    outline: solid rgb(63, 167, 110) 10px;
-    border: solid rgb(55, 190, 21) 10px;
+    outline: solid rgb(0, 255, 0) 10px;
+    border: solid rgb(51, 173, 32) 1.5px;
+    box-shadow: 0px 0px 80px 30px rgb(0, 255, 13);
+}
+.grandeAdapt {
+  
+    border: solid rgb(51, 173, 32) 10px;
+    
+    
 }
 
 .grandeMal {
     transform: scale(1.2);
 
-    outline: solid rgb(167, 70, 63) 10px;
-    border: solid rgb(170, 56, 48) 10px;
+    outline: solid rgb(255, 0, 0) 10px;
+    border: solid rgb(192, 39, 28) 1.5px;
+    box-shadow: 0px 0px 80px 30px rgb(255, 0, 0);
+}
+.grandeMalAdapt {
+   
+    border: solid rgb(170, 34, 25) 10px;
+    
 }
 
 .op {
 
-
     font-size: 30px;
     font-weight: 700;
-
-
-    background: rgb(15, 45, 107);
-    background: linear-gradient(309deg, rgba(15, 45, 107, 1) 5%, rgba(15, 45, 107, 1) 6%, rgb(45, 83, 155) 41%);
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+          -90deg, 
+          #2946a8 0%, 
+      
+          #23c8ce 50%, 
+          #2946a8 100%
+    );  
+   
+    
     filter: brightness(105%);
     z-index: 0;
-
     cursor: pointer;
 }
+.opAnimate{
+    animation: AnimateBG 5s ease-in-out infinite;
+}
 
-.animationImagen{
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+        
+    }
+
+    50% {
+        background-position: 100% 50%;
+        
+    }
+
+    100% {
+        background-position: 0% 50%;
+        
+    }
+}
+
+
+
+
+.animationImagen {
     animation: keyimg 0.65s ease-in-out;
 
 }
+
 @keyframes keyimg {
     0% {
 
         transform: rotate(0deg);
     }
-   
 
-   
-    100%{
-        transform: rotate(720deg) ;
+
+
+    100% {
+        transform: rotate(720deg);
 
     }
 }
@@ -101,15 +143,16 @@ body {
 
         transform: translate(-50%, -50%) scale(1);
     }
+
     50% {
 
         transform: translate(-50%, -50%) scale(2);
-        
+
     }
 
     100% {
         transform: translate(-50%, -50%) scale(1);
-        
+
     }
 }
 
@@ -350,7 +393,7 @@ body {
 #cross {
     position: absolute;
     color: rgb(218, 25, 25);
-    z-index: 2;
+    z-index: 100;
     border-radius: 10px 10px 10px 10px;
     border: 10px rgb(153, 32, 32) solid;
     outline: 10px rgb(253, 0, 0) solid;
@@ -383,11 +426,15 @@ body {
     filter: brightness(70%);
     cursor: auto;
 
+
 }
 
 .disabled {
     filter: brightness(70%);
     cursor: auto;
+    animation: none;
+    background: rgb(15, 45, 107);
+    background: linear-gradient(309deg, rgba(15, 45, 107, 1) 5%, rgba(15, 45, 107, 1) 6%, rgb(45, 83, 155) 41%);
 
 }
 

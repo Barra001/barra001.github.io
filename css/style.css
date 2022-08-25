@@ -314,6 +314,7 @@ body {
     animation: keyCorrect 0.7s ease-in-out;
     /*40s*/
     animation-timing-function: linear;
+   
 
 
 
@@ -322,13 +323,13 @@ body {
 
 @keyframes keyCorrect {
     from {
-        opacity: 0;
-        box-shadow: inset 13px 9px 5px 0px rgba(13, 12, 12, 0.68);
+        filter: brightness(50%);
+        box-shadow: inset 0px 0px 57px 6px rgba(0,0,0,0.75);
 
     }
 
     to {
-
+        filter: brightness(100%);
         opacity: 1;
         box-shadow: none;
 
@@ -395,9 +396,9 @@ body {
     color: rgb(218, 25, 25);
     z-index: 100;
     border-radius: 10px 10px 10px 10px;
-    border: 10px rgb(153, 32, 32) solid;
+
     outline: 10px rgb(253, 0, 0) solid;
-    background: rgba(0, 0, 0, 0.342);
+    
     top: -600px;
 
 
@@ -409,7 +410,9 @@ body {
 .mostrarCross {
     transform: translateY(800px) scale(1.8);
     filter: brightness(180%);
-    filter: drop-shadow(30px 10px 4px #141416);
+    background: rgba(0, 0, 0, 0.575);
+ 
+   box-shadow: inset 0px 0px 20px 0.00001px rgb(255, 0, 0),0px 0px 70px 20px rgb(255, 0, 0);
 
 }
 

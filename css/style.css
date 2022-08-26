@@ -87,8 +87,12 @@ body {
     cursor: pointer;
 }
 .opAnimate{
+    
     animation: AnimateBG 5s ease-in-out infinite;
+   
 }
+
+
 
 @keyframes AnimateBG {
     0% {
@@ -136,6 +140,7 @@ body {
     transform: translate(-50%, -50%);
     animation: keyOption 0.5s ease-in-out;
     animation-timing-function: ease-in-out;
+   
 }
 
 @keyframes keyOption {
@@ -309,7 +314,7 @@ body {
 .correcto {
 
     background: linear-gradient(284deg, rgba(7, 199, 169, 1) 14%, rgba(3, 170, 112, 1) 37%, rgba(4, 158, 153, 1) 91%);
-    place-items: center left;
+
     padding-left: 10px;
     animation: keyCorrect 0.7s ease-in-out;
     /*40s*/
@@ -340,7 +345,8 @@ body {
 
     float: right;
     width: 25%;
-    height: 101%;
+    height: 102%;
+    margin-top: -1px;
     border-left: solid black 6px;
     display: grid;
     place-items: center;

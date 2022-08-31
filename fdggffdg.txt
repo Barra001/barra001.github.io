@@ -1,0 +1,103 @@
+Ligthouse:
+    *Image elements do not have explicit width and height
+
+
+-saco horario de arriba del todo		                /
+-redes más grandes                                      /
+-boton flotante solo te manda a Whatsapp                /
+-usar los colores del logo                              /
+-smoth scrolling roto                                   /
+-cuando hay un solo tip la imagen no esta centrada      /
+-hacer un buen nav para celular                         ?
+-arrelar header en celulkarefa-spin                     ?
+-que el nav se salga cuando tocas                       /
+-boton wp por arriba del nav                            /
+-sigue habiendo problemas en consola                    /
+-poner los archivos descargados y no por link           /
+-hacer imagenes buenas para el carrousel                / (espero a las de ellas)
+-ver como hacer lo de google mapas con tra direccion    /
+-cambiar menu dropdown                                  /
+-cambiar header                                         /
+-cambiar fondo en servicios                             /(ellas me tienen que dar una) <- hacer un filtro por lo menos
+-sacar todo lo que sea compometedor limpiando main.css  *
+-cambiar contact area                                   /
+-ponerle a los iconos de servicios el color correcto    /
+-error al deslizar tip                                  /
+-efecto de monbin que las cosas van subiendo a vos      /(va o no?)
+-cambiar Promos                                         /
+-smoth scroll trancado                                  *(creo que quedó)
+
+
+
+
+*inicio ("clínica dental Mic" queda quieto con el boton)  donde hay botón de reservar cita y atrás fotos que pasan pero el botón no 	/
+*hay que sacar lo de ortodoncia restauración	                                                                                        /
+*Quienes somos y fotos de ellas en blanco y negro medio junto                                                                           /
+*Servicios                                                                                                                              /
+*Proyectos (¿como seria esto?)                                                                                                          ?
+*Tips informativos en tarjetitas carrousel                                                                                              /
+*Promos                                                                                                                                 ?
+*Contacto(es modal con el form, pasenme la info de contacto, lo dejo como esta?)                                                        ?
+*Donde estamos                                                                                                                          /
+*Footer mucho más chico nulo(Esta bien asi?)                                                                                            ?
+
+
+
+Partir de happy theet arriba del todo foto grande del consultorio
+
+
+correr la pagina sin jquery-ui.js               /
+
+probar si es boostrao min o el no min           /
+
+correr sin animate.min.css                      /     
+
+ver que se puede sacar de main.css              *
+
+probar sacar font-awesome.im.css                /
+
+probar sacar baguettebox.min.js                 /
+
+ver donde se usan los linearIcons y sacarlos    (se deja)
+
+ver donde se usa magiific pop-up y sacar        /
+
+ver donde se usa nice-select y sacar            /   
+
+ver quien usa baguetteBox-overlay y sacar       /
+
+borrar min-wpp.css (esta mal el nombre)         /
+
+ver y borrar grid gallery                       /
+
+
+
+
+
+
+/*
+#f7e6d7
+
+#fbdcc3
+
+#fad5b6
+
+#f0bc9e
+
+#db9583
+
+#a67163
+
+*/
+
+#b8daff			->	#f7e6d7
+
+#9fcdff			->	#fbdcc3
+
+#007bff			->	#fad5b6
+
+#0069d9			->	#f0bc9e primary
+
+#0062cc - #004085;	->	#db9583
+
+rgba(0, 123, 255, 0.5)	->	rgba(166, 113, 99, 0.5)

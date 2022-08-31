@@ -1,0 +1,90 @@
+.WAButtonDe {
+	width: 4rem;
+	height: 4rem;
+	font-size: 2.5rem;
+	border-radius: 50%;
+	background-color: #00e676;
+	position: fixed;
+	bottom: 30px;
+	left: auto;
+	right: 25px;
+	color: white;
+	display: grid;
+	place-items: center;
+	box-shadow: 1px 1px 4px rgb(60 60 60 / 40%);
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	z-index: 1000;
+}
+
+.WAButtonActive {
+	width: 11rem;
+	font-size: 1rem;
+	color: #000;
+	height: 7rem;
+	border-radius: 35%;
+	background-color: rgb(250, 245, 245);
+	border: #00e676 solid 0.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+
+}
+
+#WAButton button {
+	font-size: 1rem;
+
+	border: none;
+	color: white;
+	background-color: #00e676;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	animation: keyBtnWp 0.65s ease-in-out; 
+	animation-timing-function: linear;
+	
+
+
+}
+#WAButton div {
+	
+	animation: keyBtnWp 0.65s ease-in-out; 
+}
+#WAButton button:hover {
+	background-color: rgb(250, 245, 245);
+	color: #000;
+	border: #000 0.01rem solid;
+	cursor: pointer;
+}
+
+#whatIcon {
+	color: white;
+}
+#WAButton:hover{
+	cursor: pointer;
+	box-shadow: 2px 0px 25px -5px rgba(0,0,0,0.7);
+-webkit-box-shadow: 2px 0px 25px -5px rgba(0,0,0,0.7);
+-moz-box-shadow: 2px 0px 25px -5px rgba(0,0,0,0.7);
+}
+
+#WAButton:hover #whatIcon{
+	color: rgb(236, 236, 236);
+	
+}
+
+
+
+@keyframes keyBtnWp {
+	from {
+		
+	  opacity: 0;
+	}
+	to {
+		
+		opacity: 1;
+	}
+  }

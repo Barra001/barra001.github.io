@@ -30,7 +30,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
+
 
 }
 
@@ -44,16 +44,18 @@
 	-moz-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
-	animation: keyBtnWp 0.65s ease-in-out; 
+	animation: keyBtnWp 0.65s ease-in-out;
 	animation-timing-function: linear;
-	
+
 
 
 }
+
 #WAButton div {
-	
-	animation: keyBtnWp 0.65s ease-in-out; 
+
+	animation: keyBtnWp 0.65s ease-in-out;
 }
+
 #WAButton button:hover {
 	background-color: rgb(250, 245, 245);
 	color: #000;
@@ -64,27 +66,73 @@
 #whatIcon {
 	color: white;
 }
-#WAButton:hover{
+
+#WAButton:hover {
 	cursor: pointer;
-	box-shadow: 2px 0px 25px -5px rgba(0,0,0,0.7);
--webkit-box-shadow: 2px 0px 25px -5px rgba(0,0,0,0.7);
--moz-box-shadow: 2px 0px 25px -5px rgba(0,0,0,0.7);
+	box-shadow: 2px 0px 25px -5px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 2px 0px 25px -5px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 2px 0px 25px -5px rgba(0, 0, 0, 0.7);
 }
 
-#WAButton:hover #whatIcon{
+#WAButton:hover #whatIcon {
 	color: rgb(236, 236, 236);
-	
+
 }
 
 
 
 @keyframes keyBtnWp {
 	from {
-		
-	  opacity: 0;
+
+		opacity: 0;
 	}
+
 	to {
-		
+
 		opacity: 1;
 	}
-  }
+}
+
+#wpNumber {
+	padding: 4px;
+}
+
+#wpNumber:hover {
+	background: #d3d3d3;
+	transition: all 0.5s ease 0s;
+
+	border-radius: 3px 3px 3px 3px;
+}
+
+#wpNumber:hover .tooltiptext {
+	visibility: visible;
+	opacity: 0.85;
+}
+
+.tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 90%;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}

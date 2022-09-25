@@ -134,8 +134,8 @@ $(document).ready(function () {
         });
         $('body').append($mobile_nav);
         $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="bi bi-list"></i></button>');
-        $('body').append('<div id="mobile-body-overly"></div>');
         $('#mobile-nav').find('.menu-has-children').prepend('<i class="lnr lnr-chevron-down"></i>');
+        $('body').append('<div id="mobile-body-overly"></div>');
 
         $(document).on('click', '.menu-has-children i', function (e) {
             $(this).next().toggleClass('menu-item-active');

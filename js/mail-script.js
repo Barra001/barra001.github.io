@@ -35,6 +35,7 @@ $(document).ready(function () {
 });
 
 
+
 function validateManualy() {
     let toReturn = true;
     let arr = document.getElementsByClassName("form-control")
@@ -49,15 +50,15 @@ function validateManualy() {
 
 async function callErrorAlert() {
     var errorAlert = document.getElementById("errorAlert")
-    errorAlert.style.display = "block"
-    await sleep(4000)
-    errorAlert.style.display = "none"
+    errorAlert.classList.remove("levantarAlert")
+    void errorAlert.offsetWidth;
+    errorAlert.classList.add("levantarAlert")
 }
 
 async function callsuccesAlert() {
     var succesAlert = document.getElementById("succesAlert")
-    succesAlert.style.display = "block"
-    await sleep(4000)
-    succesAlert.style.display = "none"
+    succesAlert.classList.remove("levantarAlert")
+    void succesAlert.offsetWidth;
+    succesAlert.classList.add("levantarAlert")
 }
 

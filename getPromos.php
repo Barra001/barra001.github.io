@@ -10,7 +10,7 @@ try {
   $sql = "SELECT * FROM promo";
   
   foreach ($conn->query($sql) as $fila) {
-    echo $fila["titulo"]. "-" . $fila["tipoDeDescuento"]. "-" . $fila["valides"]. "*";
+    echo $fila["titulo"]. "-" . $fila["tipoDeDescuento"]. "-" . $fila["valides"]."-" . $fila["imagen"]. "*";
   }
   
   $conn = null;

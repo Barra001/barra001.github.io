@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@media print {
+ @media print {
 
     *,
     *::before,
@@ -9040,7 +9040,6 @@ a.text-dark:focus {
 .invisible {
     visibility: hidden !important
 }
-
 
 
 

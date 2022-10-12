@@ -1,7 +1,7 @@
 .reveal {
   position: relative;
   transform: translateY(150px);
-  opacity: 0.1;
+  opacity: -1;
   transition: 1s all ease;
 }
 

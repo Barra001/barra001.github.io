@@ -22,7 +22,7 @@ try {
     $borrar = "DELETE FROM promo";
     $conn->query($borrar);
     for ($i = 1; $i <= $_POST["cant"]; $i = $i + 1) {
-      $subirPromo = $conn->prepare("INSERT  into Promo values (:titulo, :tipo, :validez);");
+      $subirPromo = $conn->prepare("INSERT  into Promo values (:titulo, :tipo, :validez, null);");
       $subirPromo->execute([ 'titulo' => $_POST["titulo".$i], 'tipo' => $_POST["tipo".$i], 'validez' => $_POST["validez".$i] ]);
 
     }

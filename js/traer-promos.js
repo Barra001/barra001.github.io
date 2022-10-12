@@ -1,4 +1,4 @@
-
+/*
 async function reqListener() {
   let avisoPromo = document.getElementById("avisoPromos")
   let response = this.responseText;
@@ -28,3 +28,4 @@ req.addEventListener("load", reqListener);
 req.open("GET", "getPromos.php");
 req.send();
 
+*/

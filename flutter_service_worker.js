@@ -4,15 +4,14 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "9c289ceb8aadf7b89ac7171e31f06bc8",
-"index.html": "0abf7868bcc9992706ed143dc3edd7c7",
-"/": "0abf7868bcc9992706ed143dc3edd7c7",
-"main.dart.js": "c403c3f7bc79d38ba00fd195cb034b16",
-"flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
-"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+"index.html": "6a924910dc27ebd674b140c1021ece2a",
+"/": "6a924910dc27ebd674b140c1021ece2a",
+"main.dart.js": "9190674087597615d803e3b77b0b7e0d",
+"favicon.png": "a9407191beb8599e4d382ddb4a5ff96a",
+"icons/Icon-192.png": "33263ef6e178cce94ecb6d3f054ac86e",
+"icons/Icon-maskable-192.png": "33263ef6e178cce94ecb6d3f054ac86e",
+"icons/Icon-maskable-512.png": "1d4a7227037e210784b8bdc3b0febb43",
+"icons/Icon-512.png": "1d4a7227037e210784b8bdc3b0febb43",
 "manifest.json": "53bf184c8810319d9b2b42442351ea5d",
 "assets/AssetManifest.json": "26d48f5bd281f32977896d74519d4633",
 "assets/NOTICES": "259068529bed6e57beac74e9760f7147",
@@ -21,11 +20,7 @@ const RESOURCES = {
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
 "assets/assets/Dongle-Regular.ttf": "bbcc589e93dffa4edd3c4f2909d8e9c7",
 "assets/assets/Dongle-Light.ttf": "48dddd27aea10aa2f5656a69bb93980b",
-"assets/assets/Dongle-Bold.ttf": "153a5c3b5262e045f590b5ceacfcb3e6",
-"canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
-"canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
-"canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
-"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e"
+"assets/assets/Dongle-Bold.ttf": "153a5c3b5262e045f590b5ceacfcb3e6"
 };
 
 // The application shell files that are downloaded before a service worker can
